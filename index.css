@@ -1,0 +1,181 @@
+/* *========global styles========* */
+:root {
+    /* *favorite colors* */
+    /* *  --Name  * */
+    /* * You can assign favorite name that is just like variable in programming language * */
+    /* * The only rule is that start with -- * */
+
+    /* *=================== colors ==========================* */
+    --clr-none : rgba(255,255,255,0.5);
+    --clr-dark-cover : rgba(0,0,0,0.5);
+    --clr-white : #ffffff;
+    --clr-shadow : 2px 2px #000; /*! use with --> text-shadow: var(--clr-shadow)*/
+    /* *=================== box-shadow ======================* */
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    /* *=================== toggle action ===================* */
+    --transition: all 0.3s linear;
+    /* *=================== grid ============================* */
+
+    /* *=================== others ==========================* */
+    --spacing: 0.1rem;
+}
+
+body {
+	font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #424242;
+}
+
+footer {
+    background: rgb(119,144,169);
+    background: -moz-linear-gradient(223deg, rgba(119,144,169,1) 13%, rgba(155,172,188,1) 48%);
+    background: -webkit-linear-gradient(223deg, rgba(119,144,169,1) 13%, rgba(155,172,188,1) 48%);
+    background: linear-gradient(223deg, rgba(119,144,169,1) 13%, rgba(155,172,188,1) 48%);
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, li, span {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+header a:hover {
+    color: black;
+}
+
+footer a:hover {
+    color: black;
+}
+
+strong {
+    background-color: #111527 ;
+    color: white;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+/*=========================== adjuster ===========================*/
+.head {
+    z-index: 999;
+}
+
+/*=========================== border ===========================*/
+.bor-cir {
+    color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bor-cir span {
+    color: rgb(150, 150, 150);
+    border: rgb(150, 150, 150);
+}
+/*=========================== background ===========================*/
+.bg-main {
+    background-image: url(images/IMG_1.png);
+    background-color: #0053BD;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.bg-main-text {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.bg-our-service {
+    background: -moz-linear-gradient(321deg, rgba(18,10,10,1) 0%, rgba(181,181,181,1) 77%);
+    background: -webkit-linear-gradient(321deg, rgba(18,10,10,1) 0%, rgba(181,181,181,1) 77%);
+    background: linear-gradient(321deg, rgba(18,10,10,1) 0%, rgba(181,181,181,1) 77%);
+    box-shadow: var(--box-shadow);
+}
+
+.bg-about-us {
+    background-image: url(images/IMG_7.png);
+    background-color:var(--clr-dark-cover);
+    background-blend-mode:color;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    position: relative;
+}
+
+.image-width {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.image-cover {
+    object-fit: cover;
+}
+
+
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.left{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card-height {
+    height: 90%;
+}
+
+.card-shadow {
+    box-shadow: var(--box-shadow)
+}
+
+/*=========================== footer ===========================*/
+
+@media screen and (min-width:540px) {
+    .inline-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .text-center-sm {
+        text-align: center;
+    }
+}
+
+.width-max {
+    width: 100%;
+}
+
+/*=========================== overwrite bootstrap ===========================*/
+
+.navbar-light {
+    background-color: transparent;
+}
